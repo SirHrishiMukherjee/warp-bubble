@@ -296,8 +296,3 @@ def compute():
         "grad": {"x": [float(v) for v in x], "y": [float(v) for v in y], "z": pack_field(grad_mag)},
     }
     return jsonify(payload)
-
-
-if __name__ == "__main__":
-    # For local development
-    app.run(host="127.0.0.1", port=5000, debug=True)
